@@ -6,7 +6,12 @@
   "license": "ISC",
   "main": "node.js",
   "types": "dist/percentage.d.ts",
-  "keywords": [ "percent",  "percentage", "percentagejs", "percentage.js"],
+  "keywords": [
+    "percent",
+    "percentage",
+    "percentagejs",
+    "percentage.js"
+  ],
   "scripts": {
     "build": "rm -rf dist && tsc",
     "test": "echo \"TODO\" && exit 0",
@@ -16,5 +21,15 @@
     "dist",
     "node.js",
     "README.md"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlimkin/percentagejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlimkin/percentagejs/issues"
+  },
+  "homepage": "https://github.com/dlimkin/percentagejs#readme"
 }
