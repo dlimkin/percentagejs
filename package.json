@@ -1,0 +1,26 @@
+{
+  "name": "percentagejs",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript percentage library",
+  "main": "node.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "echo \"TODO\" && exit 0",
+    "prepublish": "npm update && npm test && npm run build"
+  },
+  "files": [
+    "dist",
+    "node.js",
+    "README.md"
+  ],
+  "keywords": [
+    "percent",
+    "percentage"
+  ],
+  "author": "dlimkin",
+  "license": "ISC",
+  "types": "dist/percentage.d.ts",
+  "devDependencies": {
+    "@types/node": "^6.0.46"
+  }
+}
