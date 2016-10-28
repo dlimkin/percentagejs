@@ -1,7 +1,28 @@
-Percentagejs
+PercentageJS
 =============
 JavaScript and TypeScript percentage library
 
+## Install and Use
+### Node
+
+```js
+npm i percentagejs -S
+//…
+const Percentage = require("percentagejs");
+//…
+```
+### Browserify
+
+```js
+<script src="percentage.js"></script>
+<script>
+//…
+var res = Percentage.addPerc(200, 10);  // 220
+//…
+</script>
+```
+
+## Description
 ```js
 class Percentage {
     // Considers the percentage of the amount equivalent to multiplying by the percentage
