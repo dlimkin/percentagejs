@@ -18,28 +18,28 @@ export default class Percentage {
 
   // Believes the amount, the specified portion which is the specified percent
   // Example: 10% of x = 20 {200}
-  public static partOfPercAsSum(percent: number, part: number) {
+  public static partOfPercAsSum(percent: number|string, part: number|string) {
     percent = this.pf(percent);
     return (percent === 0) ? 0 : (this.pf(part) * 100) / percent;
   }
 
   // Considers how much percent of the amount is part.
   // Example: 10 of 200 = x% {5%}
-  public static partOfSumAsPerc(part: number, sum: number) {
+  public static partOfSumAsPerc(part: number|string, sum: number|string) {
     sum = this.pf(sum);
     return (sum === 0) ? 0 : (this.pf(part) * 100) / sum;
   }
 
   // Subtracts from the number of percentages
   // Example: 200 - 10% = x {180}
-  public static subPerc(num: number, percent: number) {
+  public static subPerc(num: number|string, percent: number|string) {
     return this.pf(num) - this.percOfSumAsPart(percent, num);
   }
 
 
   // Adds to the number of percentages
   // Example: 200 + 10% = x {220}
-  public static addPerc(num: number, percent: number) {
+  public static addPerc(num: number|string, percent: number|string) {
     return this.pf(num) + this.percOfSumAsPart(percent, num);
   }
 
@@ -47,7 +47,7 @@ export default class Percentage {
   // Returns the difference with respect to the first day of the second of percentages
   // Example: 10 - 12 = x {-16.6% (12-16.6% = 10)}
   // Example: 12 - 10 = x {20% (10 + 20% = 12)}
-  public static subNumsAsPerc(num1: number, num2: number): number {
+  public static subNumsAsPerc(num1: number|string, num2: number|string): number {
     return this.partOfSumAsPerc(this.pf(num1) - this.pf(num2), num2);
   }
 
@@ -55,14 +55,14 @@ export default class Percentage {
   // TODO
   // Example: 4 - 2 = 50%
   // Example: 2 - 4 = -100%
-  public static diffNumsAsPerc(num1: number, num2: number) {
+  public static diffNumsAsPerc(num1: number|string, num2: number|string) {
     return 100 - this.partOfSumAsPerc(num2, num1);
   }
 
   // Returns the difference of two numbers as a percentage of the module (with sign)
   // Example: 4 - 2 = x {50%}
   // Example: 2 - 4 = x {-50%}
-  public static compareNumsAsPerc(num1: number, num2: number) {
+  public static compareNumsAsPerc(num1: number|string, num2: number|string) {
     let rev = false;
     num1 = this.pf(num1);
     num2 = this.pf(num2);

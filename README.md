@@ -39,32 +39,32 @@ class Percentage {
     
     // Believes the amount, the specified portion which is the specified percent
     // Example: 10% of x = 20 {200}
-    static partOfPercAsSum(percent: number, part: number): number;
+    static partOfPercAsSum(percent: number | string, part: number | string): number;
     
     // Considers how much percent of the amount is part.
     // Example: 10 of 200 = x% {5%}
-    static partOfSumAsPerc(part: number, sum: number): number;
+    static partOfSumAsPerc(part: number | string, sum: number | string): number;
     
     // Subtracts from the number of percentages
     // Example: 200 - 10% = x {180}
-    static subPerc(num: number, percent: number): number;
+    static subPerc(num: number | string, percent: number | string): number;
     
     // Adds to the number of percentages
     // Example: 200 + 10% = x {220}
-    static addPerc(num: number, percent: number): number;
+    static addPerc(num: number | string, percent: number | string): number;
     
     // Returns the difference with respect to the first day of the second of percentages
     // Example: 10 - 12 = x {-16.6% (12-16.6% = 10)}
     // Example: 12 - 10 = x {20% (10 + 20% = 12)}
-    static subNumsAsPerc(num1: number, num2: number): number;
+    static subNumsAsPerc(num1: number | string, num2: number | string): number;
     
     // Example: 4 - 2 = 50%
     // Example: 2 - 4 = -100%
-    static diffNumsAsPerc(num1: number, num2: number): number;
+    static diffNumsAsPerc(num1: number | string, num2: number | string): number;
     
     // Returns the difference of two numbers as a percentage of the module (with sign)
     // Example: 4 - 2 = x {50%}
     // Example: 2 - 4 = x {-50%}
-    static compareNumsAsPerc(num1: number, num2: number): number;
+    static compareNumsAsPerc(num1: number | string, num2: number | string): number;
 }
 ```
