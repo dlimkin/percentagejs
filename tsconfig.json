@@ -9,7 +9,7 @@
     "target": "es5",
     "sourceMap": false,
     "lib": ["es5", "dom"],
-    "outDir": "dist",
+    //"outDir": "dist",
     "typeRoots": [
       "node_modules/@types"
     ]

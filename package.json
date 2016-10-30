@@ -13,13 +13,13 @@
     "percentage.js"
   ],
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -f percentage.js percentage.d.ts && tsc",
     "test": "echo \"TODO\" && exit 0",
     "prepublish": "npm update && npm test && npm run build"
   },
   "files": [
-    "dist/percentage.d.ts",
-    "dist/percentage.js",
+    "percentage.d.ts",
+    "percentage.js",
     "node.js",
     "README.md"
   ],

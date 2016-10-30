@@ -2,16 +2,24 @@ PercentageJS
 =============
 JavaScript and TypeScript percentage library
 
-## Install and Use
-### Node
+## Get Started
+
+### Install
+
+```sh
+npm i percentagejs -S
+```
+
+### Use
+
+#### Node
 
 ```js
-npm i percentagejs -S
 //…
 const Percentage = require("percentagejs");
 //…
 ```
-### Browserify
+#### Browserify
 
 ```js
 <script src="percentage.js"></script>
